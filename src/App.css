@@ -10,5 +10,6 @@
   align-items: center;
 }
 .app__body {
+  width: 100%;
   display: flex;
 }
