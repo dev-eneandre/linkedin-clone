@@ -9,9 +9,6 @@
 .sidebar__avatar {
   margin-bottom: 10px;
 }
-.sidebar__stats {
-  width: 200px;
-}
 .sidebar__top > h4 {
   color: gray !important;
   font-size: 10px;

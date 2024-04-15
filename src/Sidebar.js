@@ -30,7 +30,7 @@ const Sidebar = () => {
         <div className="sidebar__stat">
           <p>Views on posts</p>
           <p className="sidebar__statNumber">4,000</p>
-        </div>
+        </div> 
       </div>
 
       <div className="sidebar__bottom">

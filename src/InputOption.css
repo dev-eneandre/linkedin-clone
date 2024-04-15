@@ -1,5 +1,6 @@
 .inputOption {
   display: flex;
+  column-gap: 3px;
   align-items: center;
   margin-top: 15px;
   cursor: pointer;
