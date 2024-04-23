@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { auth } from "./firebase";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";
 
@@ -14,6 +18,19 @@ const Login = () => {
 
   const loginToApp = (e) => {
     e.preventDefault();
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userAuth) => {
+        dispatch(
+          login({
+            email: userAuth.user.email,
+            uid: userAuth.user.uid,
+            displayName: userAuth.user.displayName,
+            profileUrl: userAuth.user.photoURL,
+          })
+        );
+      })
+      .catch((error) => alert(error));
   };
   const register = (e) => {
     e.preventDefault();
@@ -76,7 +93,8 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="password"
         />
-        <button onClick={register}>Sign In</button>
+        <button onClick={register}>Sign Up</button>
+        <button onClick={loginToApp}>Sign In</button>
       </form>
       <p>
         Not a Member{" "}
