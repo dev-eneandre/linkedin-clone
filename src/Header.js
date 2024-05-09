@@ -23,6 +23,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
+        
         <img
           src="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo"
           alt="linkedIn Logo"

@@ -2,9 +2,11 @@
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-bottom: 0.1px solid lightgray;
   width: 100%;
   position: sticky;

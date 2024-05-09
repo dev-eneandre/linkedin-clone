@@ -21,20 +21,20 @@ const Widgets = () => {
         <Info />
       </div>
       {newsArticle(
-        "Life Update",
-        "i am really tired but i would like to finish strong"
+        "Jobs in UK",
+        "Front End Developer Needed At google"
       )}
       {newsArticle(
-        "Life Update",
-        "i am really tired but i would like to finish strong"
+        "Open AI",
+        "Front End Developer Needed At Open AI"
       )}
       {newsArticle(
-        "Life Update",
-        "i am really tired but i would like to finish strong"
+        "Netflix",
+        "Front End Developer Needed At Netflix"
       )}
       {newsArticle(
-        "Life Update",
-        "i am really tired but i would like to finish strong"
+        "Start Up",
+        "Front End Developer Needed At A good startup "
       )}
     </div>
   );

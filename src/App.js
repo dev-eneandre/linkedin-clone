@@ -34,17 +34,17 @@ function App() {
     });
   }, [authUser]);
   return (
-    <div className="app">
+    <div className="app ">
       <Header />
 
       {!authUser ? (
         <Login />
       ) : (
-        <div className="app__body">
+        <div className="app__body section">
           <Sidebar />
           <Feed />
-          
-        <Widgets /> 
+
+          <Widgets />
         </div>
       )}
     </div>
