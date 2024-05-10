@@ -11,14 +11,10 @@ import {
 import Post from "./Post";
 import { db } from "./firebase";
 import {
-  doc,
   getDocs,
-  setDoc,
   collection,
   serverTimestamp,
   addDoc,
-  orderBy,
-  query,
 } from "firebase/firestore";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
